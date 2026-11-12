@@ -1,0 +1,82 @@
+name: Update data and publish dashboard
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      refresh_sources:
+        description: Download fresh official data (uncheck only to deploy the bundled snapshot)
+        type: boolean
+        default: true
+  schedule:
+    - cron: '30 5 * * 1-5'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: gdp-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+      - name: Install source-file reader
+        run: python -m pip install -r requirements.txt
+      - name: Verify the approved Excel model parity
+        run: node --test tests/*.test.mjs
+      - name: Verify source-integrity guards
+        run: python -m unittest discover -s tests -p 'test_*.py'
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Restore the last published source coverage
+        if: github.event_name != 'workflow_dispatch' || inputs.refresh_sources
+        env:
+          PAGES_BASE_URL: ${{ steps.pages.outputs.base_url }}
+        run: python scripts/restore_published.py
+      - name: Download and validate official sources
+        if: github.event_name != 'workflow_dispatch' || inputs.refresh_sources
+        run: python scripts/update_data.py
+      - name: Verify refreshed inputs and model
+        run: node --test tests/*.test.mjs
+      - name: Connect dashboard to this repository
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          Path('dist/config.json').write_text(json.dumps({'repository': os.environ['GITHUB_REPOSITORY'], 'workflow': 'update-and-deploy.yml'}))
+          PY
+      - name: Upload dashboard
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+      - name: Retain source-refresh audit on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-refresh-audit
+          path: data_snapshots
+          retention-days: 7
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish dashboard
+        id: deployment
+        uses: actions/deploy-pages@v4
