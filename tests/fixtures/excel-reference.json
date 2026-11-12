@@ -1,0 +1,1983 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-21T16:02:00+08:00",
+  "snapshotType": "frozen-parity-fixture",
+  "provenance": {
+    "description": "Read-only import from the approved quarterly workbook; revised data, not historical first-release vintages."
+  },
+  "gdp": [
+    {
+      "quarter": "2015Q1",
+      "agriculture": 21691.0,
+      "mining": 26879.0,
+      "manufacturing": 62333.0,
+      "construction": 13728.0,
+      "services": 154469.0,
+      "duties": 3154.0,
+      "total": 282255.0
+    },
+    {
+      "quarter": "2015Q2",
+      "agriculture": 24001.0,
+      "mining": 25729.0,
+      "manufacturing": 65695.0,
+      "construction": 12927.0,
+      "services": 156945.0,
+      "duties": 3678.0,
+      "total": 288975.0
+    },
+    {
+      "quarter": "2015Q3",
+      "agriculture": 27685.0,
+      "mining": 24260.0,
+      "manufacturing": 65851.0,
+      "construction": 14332.0,
+      "services": 162177.0,
+      "duties": 3660.0,
+      "total": 297965.0
+    },
+    {
+      "quarter": "2015Q4",
+      "agriculture": 24161.0,
+      "mining": 26191.0,
+      "manufacturing": 68500.0,
+      "construction": 14395.0,
+      "services": 170292.0,
+      "duties": 4207.0,
+      "total": 307745.0
+    },
+    {
+      "quarter": "2016Q1",
+      "agriculture": 21208.0,
+      "mining": 26586.0,
+      "manufacturing": 65146.0,
+      "construction": 14825.0,
+      "services": 162558.0,
+      "duties": 4006.0,
+      "total": 294329.0
+    },
+    {
+      "quarter": "2016Q2",
+      "agriculture": 22617.0,
+      "mining": 26313.0,
+      "manufacturing": 68160.0,
+      "construction": 14083.0,
+      "services": 165993.0,
+      "duties": 3848.0,
+      "total": 301015.0
+    },
+    {
+      "quarter": "2016Q3",
+      "agriculture": 26404.0,
+      "mining": 24927.0,
+      "manufacturing": 68630.0,
+      "construction": 15478.0,
+      "services": 172206.0,
+      "duties": 3865.0,
+      "total": 311510.0
+    },
+    {
+      "quarter": "2016Q4",
+      "agriculture": 23748.0,
+      "mining": 27542.0,
+      "manufacturing": 71962.0,
+      "construction": 15121.0,
+      "services": 179805.0,
+      "duties": 4280.0,
+      "total": 322458.0
+    },
+    {
+      "quarter": "2017Q1",
+      "agriculture": 22608.0,
+      "mining": 26845.0,
+      "manufacturing": 69022.0,
+      "construction": 15832.0,
+      "services": 172090.0,
+      "duties": 4348.0,
+      "total": 310744.0
+    },
+    {
+      "quarter": "2017Q2",
+      "agriculture": 23644.0,
+      "mining": 26187.0,
+      "manufacturing": 72242.0,
+      "construction": 15253.0,
+      "services": 176593.0,
+      "duties": 4312.0,
+      "total": 318231.0
+    },
+    {
+      "quarter": "2017Q3",
+      "agriculture": 27266.0,
+      "mining": 25500.0,
+      "manufacturing": 73442.0,
+      "construction": 16431.0,
+      "services": 183517.0,
+      "duties": 4509.0,
+      "total": 330664.0
+    },
+    {
+      "quarter": "2017Q4",
+      "agriculture": 25990.0,
+      "mining": 27305.0,
+      "manufacturing": 75758.0,
+      "construction": 16006.0,
+      "services": 191161.0,
+      "duties": 4908.0,
+      "total": 341129.0
+    },
+    {
+      "quarter": "2018Q1",
+      "agriculture": 23298.0,
+      "mining": 26189.0,
+      "manufacturing": 72643.0,
+      "construction": 16604.0,
+      "services": 183367.0,
+      "duties": 4995.0,
+      "total": 327096.0
+    },
+    {
+      "quarter": "2018Q2",
+      "agriculture": 23292.0,
+      "mining": 25853.0,
+      "manufacturing": 75745.0,
+      "construction": 15985.0,
+      "services": 188290.0,
+      "duties": 4272.0,
+      "total": 333438.0
+    },
+    {
+      "quarter": "2018Q3",
+      "agriculture": 27089.0,
+      "mining": 24238.0,
+      "manufacturing": 77131.0,
+      "construction": 17206.0,
+      "services": 196947.0,
+      "duties": 3074.0,
+      "total": 345685.0
+    },
+    {
+      "quarter": "2018Q4",
+      "agriculture": 25958.0,
+      "mining": 27277.0,
+      "manufacturing": 79324.0,
+      "construction": 16399.0,
+      "services": 204386.0,
+      "duties": 4204.0,
+      "total": 357547.0
+    },
+    {
+      "quarter": "2019Q1",
+      "agriculture": 24707.0,
+      "mining": 26216.0,
+      "manufacturing": 75627.0,
+      "construction": 16704.0,
+      "services": 195144.0,
+      "duties": 3976.0,
+      "total": 342373.0
+    },
+    {
+      "quarter": "2019Q2",
+      "agriculture": 24266.0,
+      "mining": 26483.0,
+      "manufacturing": 79005.0,
+      "construction": 16161.0,
+      "services": 199852.0,
+      "duties": 4142.0,
+      "total": 349910.0
+    },
+    {
+      "quarter": "2019Q3",
+      "agriculture": 28082.0,
+      "mining": 23567.0,
+      "manufacturing": 79922.0,
+      "construction": 16967.0,
+      "services": 208474.0,
+      "duties": 4106.0,
+      "total": 361117.0
+    },
+    {
+      "quarter": "2019Q4",
+      "agriculture": 24519.0,
+      "mining": 26622.0,
+      "manufacturing": 81729.0,
+      "construction": 16620.0,
+      "services": 217106.0,
+      "duties": 3956.0,
+      "total": 370552.0
+    },
+    {
+      "quarter": "2020Q1",
+      "agriculture": 22532.0,
+      "mining": 25460.0,
+      "manufacturing": 76635.0,
+      "construction": 15377.0,
+      "services": 201339.0,
+      "duties": 3347.0,
+      "total": 344690.0
+    },
+    {
+      "quarter": "2020Q2",
+      "agriculture": 24421.0,
+      "mining": 21387.0,
+      "manufacturing": 64343.0,
+      "construction": 9003.0,
+      "services": 168097.0,
+      "duties": 3435.0,
+      "total": 290686.0
+    },
+    {
+      "quarter": "2020Q3",
+      "agriculture": 27938.0,
+      "mining": 22009.0,
+      "manufacturing": 82446.0,
+      "construction": 14890.0,
+      "services": 201009.0,
+      "duties": 3844.0,
+      "total": 352137.0
+    },
+    {
+      "quarter": "2020Q4",
+      "agriculture": 24218.0,
+      "mining": 24023.0,
+      "manufacturing": 84182.0,
+      "construction": 14346.0,
+      "services": 207248.0,
+      "duties": 4720.0,
+      "total": 358736.0
+    },
+    {
+      "quarter": "2021Q1",
+      "agriculture": 22556.794,
+      "mining": 24629.68,
+      "manufacturing": 81681.707,
+      "construction": 13766.259,
+      "services": 197339.963,
+      "duties": 3937.976,
+      "total": 343912.379
+    },
+    {
+      "quarter": "2021Q2",
+      "agriculture": 24050.129,
+      "mining": 24073.234,
+      "manufacturing": 81515.941,
+      "construction": 12633.948,
+      "services": 191668.515,
+      "duties": 4218.413,
+      "total": 338160.18
+    },
+    {
+      "quarter": "2021Q3",
+      "agriculture": 27315.03,
+      "mining": 21206.905,
+      "manufacturing": 81670.066,
+      "construction": 11829.512,
+      "services": 192121.655,
+      "duties": 3278.114,
+      "total": 337421.281
+    },
+    {
+      "quarter": "2021Q4",
+      "agriculture": 24921.282,
+      "mining": 23807.309,
+      "manufacturing": 91856.647,
+      "construction": 12609.218,
+      "services": 213986.164,
+      "duties": 4207.49,
+      "total": 371388.111
+    },
+    {
+      "quarter": "2022Q1",
+      "agriculture": 22929.181,
+      "mining": 24378.353,
+      "manufacturing": 87195.1,
+      "construction": 12943.69,
+      "services": 210075.666,
+      "duties": 3812.799,
+      "total": 361334.789
+    },
+    {
+      "quarter": "2022Q2",
+      "agriculture": 23646.727,
+      "mining": 23667.24,
+      "manufacturing": 89063.314,
+      "construction": 12973.354,
+      "services": 215854.437,
+      "duties": 4223.86,
+      "total": 369428.932
+    },
+    {
+      "quarter": "2022Q3",
+      "agriculture": 28022.425,
+      "mining": 23422.312,
+      "manufacturing": 92430.813,
+      "construction": 13626.439,
+      "services": 225149.521,
+      "duties": 4168.395,
+      "total": 386819.905
+    },
+    {
+      "quarter": "2022Q4",
+      "agriculture": 25565.693,
+      "mining": 25536.029,
+      "manufacturing": 95536.365,
+      "construction": 13911.559,
+      "services": 233790.715,
+      "duties": 4578.767,
+      "total": 398919.128
+    },
+    {
+      "quarter": "2023Q1",
+      "agriculture": 23170.943,
+      "mining": 25112.444,
+      "manufacturing": 90015.107,
+      "construction": 13859.624,
+      "services": 225435.866,
+      "duties": 4247.358,
+      "total": 381841.342
+    },
+    {
+      "quarter": "2023Q2",
+      "agriculture": 23417.462,
+      "mining": 23142.715,
+      "manufacturing": 89177.157,
+      "construction": 13724.809,
+      "services": 225429.242,
+      "duties": 4551.436,
+      "total": 379442.821
+    },
+    {
+      "quarter": "2023Q3",
+      "agriculture": 28115.613,
+      "mining": 22944.481,
+      "manufacturing": 92330.325,
+      "construction": 14656.368,
+      "services": 236406.195,
+      "duties": 4521.969,
+      "total": 398974.95
+    },
+    {
+      "quarter": "2023Q4",
+      "agriculture": 25869.273,
+      "mining": 26337.651,
+      "manufacturing": 95294.526,
+      "construction": 14375.613,
+      "services": 243568.906,
+      "duties": 5069.098,
+      "total": 410515.067
+    },
+    {
+      "quarter": "2024Q1",
+      "agriculture": 23646.519,
+      "mining": 26148.204,
+      "manufacturing": 91868.07,
+      "construction": 15495.753,
+      "services": 236156.439,
+      "duties": 4449.54,
+      "total": 397764.525
+    },
+    {
+      "quarter": "2024Q2",
+      "agriculture": 25277.831,
+      "mining": 23762.335,
+      "manufacturing": 93392.61,
+      "construction": 16120.435,
+      "services": 238958.868,
+      "duties": 4590.168,
+      "total": 402102.247
+    },
+    {
+      "quarter": "2024Q3",
+      "agriculture": 29320.142,
+      "mining": 22390.653,
+      "manufacturing": 97463.085,
+      "construction": 17595.314,
+      "services": 248811.568,
+      "duties": 5273.016,
+      "total": 420853.777
+    },
+    {
+      "quarter": "2024Q4",
+      "agriculture": 25786.798,
+      "mining": 26383.446,
+      "manufacturing": 99335.866,
+      "construction": 17382.21,
+      "services": 256764.336,
+      "duties": 5499.584,
+      "total": 431152.239
+    },
+    {
+      "quarter": "2025Q1",
+      "agriculture": 23805.144,
+      "mining": 25471.723,
+      "manufacturing": 95681.554,
+      "construction": 17697.098,
+      "services": 248151.253,
+      "duties": 4634.183,
+      "total": 415440.954
+    },
+    {
+      "quarter": "2025Q2",
+      "agriculture": 25912.73,
+      "mining": 22533.51,
+      "manufacturing": 96893.161,
+      "construction": 18074.691,
+      "services": 251194.126,
+      "duties": 5925.868,
+      "total": 420534.085
+    },
+    {
+      "quarter": "2025Q3",
+      "agriculture": 29368.084,
+      "mining": 24494.453,
+      "manufacturing": 101444.381,
+      "construction": 19656.496,
+      "services": 262006.173,
+      "duties": 6150.041,
+      "total": 443119.629
+    },
+    {
+      "quarter": "2025Q4",
+      "agriculture": 27267.612,
+      "mining": 26758.767,
+      "manufacturing": 105343.539,
+      "construction": 19280.763,
+      "services": 272628.24,
+      "duties": 6579.681,
+      "total": 457858.602
+    },
+    {
+      "quarter": "2026Q1",
+      "agriculture": 24420.432,
+      "mining": 24933.182,
+      "manufacturing": 101295.163,
+      "construction": 19063.802,
+      "services": 261968.893,
+      "duties": 5988.791,
+      "total": 437670.264
+    },
+    {
+      "quarter": "2026Q2",
+      "agriculture": 24966.472,
+      "mining": 24614.881,
+      "manufacturing": 104007.463,
+      "construction": 19256.324,
+      "services": 265967.68,
+      "duties": 7083.633,
+      "total": 445896.454
+    }
+  ],
+  "monthly": [
+    {
+      "date": "2015-01-01",
+      "cpo": 1160687.0,
+      "mining": 107.236,
+      "manufacturing": 99.035,
+      "retail": null
+    },
+    {
+      "date": "2015-02-01",
+      "cpo": 1121628.0,
+      "mining": 96.262,
+      "manufacturing": 89.005,
+      "retail": null
+    },
+    {
+      "date": "2015-03-01",
+      "cpo": 1495151.0,
+      "mining": 107.744,
+      "manufacturing": 99.182,
+      "retail": null
+    },
+    {
+      "date": "2015-04-01",
+      "cpo": 1693425.0,
+      "mining": 96.051,
+      "manufacturing": 97.007,
+      "retail": null
+    },
+    {
+      "date": "2015-05-01",
+      "cpo": 1810530.0,
+      "mining": 103.504,
+      "manufacturing": 99.451,
+      "retail": null
+    },
+    {
+      "date": "2015-06-01",
+      "cpo": 1763667.0,
+      "mining": 96.875,
+      "manufacturing": 102.565,
+      "retail": null
+    },
+    {
+      "date": "2015-07-01",
+      "cpo": 1815634.0,
+      "mining": 100.081,
+      "manufacturing": 100.57,
+      "retail": null
+    },
+    {
+      "date": "2015-08-01",
+      "cpo": 2051000.0,
+      "mining": 91.268,
+      "manufacturing": 100.389,
+      "retail": null
+    },
+    {
+      "date": "2015-09-01",
+      "cpo": 1959064.0,
+      "mining": 96.827,
+      "manufacturing": 103.401,
+      "retail": null
+    },
+    {
+      "date": "2015-10-01",
+      "cpo": 2037466.0,
+      "mining": 100.116,
+      "manufacturing": 106.315,
+      "retail": null
+    },
+    {
+      "date": "2015-11-01",
+      "cpo": 1653946.0,
+      "mining": 98.746,
+      "manufacturing": 100.026,
+      "retail": null
+    },
+    {
+      "date": "2015-12-01",
+      "cpo": 1399383.0,
+      "mining": 105.29,
+      "manufacturing": 103.055,
+      "retail": null
+    },
+    {
+      "date": "2016-01-01",
+      "cpo": 1129747.0,
+      "mining": 106.927,
+      "manufacturing": 103.205,
+      "retail": null
+    },
+    {
+      "date": "2016-02-01",
+      "cpo": 1042707.0,
+      "mining": 98.448,
+      "manufacturing": 92.881,
+      "retail": null
+    },
+    {
+      "date": "2016-03-01",
+      "cpo": 1219449.0,
+      "mining": 104.027,
+      "manufacturing": 103.694,
+      "retail": null
+    },
+    {
+      "date": "2016-04-01",
+      "cpo": 1301291.0,
+      "mining": 97.691,
+      "manufacturing": 99.452,
+      "retail": null
+    },
+    {
+      "date": "2016-05-01",
+      "cpo": 1364583.0,
+      "mining": 102.428,
+      "manufacturing": 103.14,
+      "retail": null
+    },
+    {
+      "date": "2016-06-01",
+      "cpo": 1532613.0,
+      "mining": 103.722,
+      "manufacturing": 107.149,
+      "retail": null
+    },
+    {
+      "date": "2016-07-01",
+      "cpo": 1585341.0,
+      "mining": 103.31,
+      "manufacturing": 104.268,
+      "retail": null
+    },
+    {
+      "date": "2016-08-01",
+      "cpo": 1701833.0,
+      "mining": 94.822,
+      "manufacturing": 105.158,
+      "retail": null
+    },
+    {
+      "date": "2016-09-01",
+      "cpo": 1715085.0,
+      "mining": 96.483,
+      "manufacturing": 107.38,
+      "retail": null
+    },
+    {
+      "date": "2016-10-01",
+      "cpo": 1677873.0,
+      "mining": 104.347,
+      "manufacturing": 110.768,
+      "retail": null
+    },
+    {
+      "date": "2016-11-01",
+      "cpo": 1574938.0,
+      "mining": 104.533,
+      "manufacturing": 107.023,
+      "retail": null
+    },
+    {
+      "date": "2016-12-01",
+      "cpo": 1473717.0,
+      "mining": 111.825,
+      "manufacturing": 107.883,
+      "retail": null
+    },
+    {
+      "date": "2017-01-01",
+      "cpo": 1276849.0,
+      "mining": 108.584,
+      "manufacturing": 108.256,
+      "retail": null
+    },
+    {
+      "date": "2017-02-01",
+      "cpo": 1258539.0,
+      "mining": 98.907,
+      "manufacturing": 99.734,
+      "retail": null
+    },
+    {
+      "date": "2017-03-01",
+      "cpo": 1464021.0,
+      "mining": 107.309,
+      "manufacturing": 109.504,
+      "retail": null
+    },
+    {
+      "date": "2017-04-01",
+      "cpo": 1548026.0,
+      "mining": 96.864,
+      "manufacturing": 105.908,
+      "retail": null
+    },
+    {
+      "date": "2017-05-01",
+      "cpo": 1654494.0,
+      "mining": 98.635,
+      "manufacturing": 110.563,
+      "retail": null
+    },
+    {
+      "date": "2017-06-01",
+      "cpo": 1514255.0,
+      "mining": 103.227,
+      "manufacturing": 111.822,
+      "retail": null
+    },
+    {
+      "date": "2017-07-01",
+      "cpo": 1826828.0,
+      "mining": 101.303,
+      "manufacturing": 113.104,
+      "retail": null
+    },
+    {
+      "date": "2017-08-01",
+      "cpo": 1810551.0,
+      "mining": 101.066,
+      "manufacturing": 112.955,
+      "retail": null
+    },
+    {
+      "date": "2017-09-01",
+      "cpo": 1779918.0,
+      "mining": 98.255,
+      "manufacturing": 113.67,
+      "retail": null
+    },
+    {
+      "date": "2017-10-01",
+      "cpo": 2008838.0,
+      "mining": 104.874,
+      "manufacturing": 115.471,
+      "retail": null
+    },
+    {
+      "date": "2017-11-01",
+      "cpo": 1942847.0,
+      "mining": 106.587,
+      "manufacturing": 113.871,
+      "retail": null
+    },
+    {
+      "date": "2017-12-01",
+      "cpo": 1834176.0,
+      "mining": 107.254,
+      "manufacturing": 113.72,
+      "retail": null
+    },
+    {
+      "date": "2018-01-01",
+      "cpo": 1586653.0,
+      "mining": 107.634,
+      "manufacturing": 115.72,
+      "retail": 124.359
+    },
+    {
+      "date": "2018-02-01",
+      "cpo": 1342805.0,
+      "mining": 94.427,
+      "manufacturing": 104.429,
+      "retail": 121.6
+    },
+    {
+      "date": "2018-03-01",
+      "cpo": 1574079.0,
+      "mining": 105.614,
+      "manufacturing": 114.009,
+      "retail": 127.707
+    },
+    {
+      "date": "2018-04-01",
+      "cpo": 1558769.0,
+      "mining": 100.096,
+      "manufacturing": 111.562,
+      "retail": 119.767
+    },
+    {
+      "date": "2018-05-01",
+      "cpo": 1525490.0,
+      "mining": 100.13,
+      "manufacturing": 115.14,
+      "retail": 122.311
+    },
+    {
+      "date": "2018-06-01",
+      "cpo": 1332704.0,
+      "mining": 97.444,
+      "manufacturing": 116.875,
+      "retail": 133.821
+    },
+    {
+      "date": "2018-07-01",
+      "cpo": 1503220.0,
+      "mining": 95.457,
+      "manufacturing": 118.999,
+      "retail": 135.053
+    },
+    {
+      "date": "2018-08-01",
+      "cpo": 1620605.0,
+      "mining": 94.85,
+      "manufacturing": 117.79,
+      "retail": 132.62
+    },
+    {
+      "date": "2018-09-01",
+      "cpo": 1853602.0,
+      "mining": 93.547,
+      "manufacturing": 119.123,
+      "retail": 125.518
+    },
+    {
+      "date": "2018-10-01",
+      "cpo": 1964954.0,
+      "mining": 106.493,
+      "manufacturing": 121.674,
+      "retail": 130.772
+    },
+    {
+      "date": "2018-11-01",
+      "cpo": 1845222.0,
+      "mining": 103.546,
+      "manufacturing": 118.075,
+      "retail": 133.882
+    },
+    {
+      "date": "2018-12-01",
+      "cpo": 1808038.0,
+      "mining": 108.353,
+      "manufacturing": 118.676,
+      "retail": 139.866
+    },
+    {
+      "date": "2019-01-01",
+      "cpo": 1737461.0,
+      "mining": 109.376,
+      "manufacturing": 120.55,
+      "retail": 138.331
+    },
+    {
+      "date": "2019-02-01",
+      "cpo": 1544518.0,
+      "mining": 92.397,
+      "manufacturing": 108.308,
+      "retail": 132.903
+    },
+    {
+      "date": "2019-03-01",
+      "cpo": 1672058.0,
+      "mining": 106.302,
+      "manufacturing": 118.705,
+      "retail": 137.102
+    },
+    {
+      "date": "2019-04-01",
+      "cpo": 1649368.0,
+      "mining": 99.95,
+      "manufacturing": 116.372,
+      "retail": 129.003
+    },
+    {
+      "date": "2019-05-01",
+      "cpo": 1671467.0,
+      "mining": 103.712,
+      "manufacturing": 119.926,
+      "retail": 133.836
+    },
+    {
+      "date": "2019-06-01",
+      "cpo": 1510957.0,
+      "mining": 98.835,
+      "manufacturing": 121.354,
+      "retail": 146.725
+    },
+    {
+      "date": "2019-07-01",
+      "cpo": 1740759.0,
+      "mining": 87.897,
+      "manufacturing": 123.776,
+      "retail": 146.451
+    },
+    {
+      "date": "2019-08-01",
+      "cpo": 1821548.0,
+      "mining": 93.563,
+      "manufacturing": 121.981,
+      "retail": 142.505
+    },
+    {
+      "date": "2019-09-01",
+      "cpo": 1842433.0,
+      "mining": 91.727,
+      "manufacturing": 122.083,
+      "retail": 134.773
+    },
+    {
+      "date": "2019-10-01",
+      "cpo": 1795841.0,
+      "mining": 99.868,
+      "manufacturing": 124.509,
+      "retail": 139.465
+    },
+    {
+      "date": "2019-11-01",
+      "cpo": 1538053.0,
+      "mining": 105.306,
+      "manufacturing": 121.262,
+      "retail": 143.345
+    },
+    {
+      "date": "2019-12-01",
+      "cpo": 1333904.0,
+      "mining": 103.082,
+      "manufacturing": 122.716,
+      "retail": 149.645
+    },
+    {
+      "date": "2020-01-01",
+      "cpo": 1171534.0,
+      "mining": 105.439,
+      "manufacturing": 123.15,
+      "retail": 147.665
+    },
+    {
+      "date": "2020-02-01",
+      "cpo": 1288515.0,
+      "mining": 97.365,
+      "manufacturing": 115.001,
+      "retail": 141.408
+    },
+    {
+      "date": "2020-03-01",
+      "cpo": 1401481.0,
+      "mining": 98.653,
+      "manufacturing": 113.805,
+      "retail": 126.775
+    },
+    {
+      "date": "2020-04-01",
+      "cpo": 1652771.0,
+      "mining": 81.902,
+      "manufacturing": 73.121,
+      "retail": 82.592
+    },
+    {
+      "date": "2020-05-01",
+      "cpo": 1651336.0,
+      "mining": 81.445,
+      "manufacturing": 92.795,
+      "retail": 109.749
+    },
+    {
+      "date": "2020-06-01",
+      "cpo": 1885742.0,
+      "mining": 84.514,
+      "manufacturing": 127.097,
+      "retail": 130.362
+    },
+    {
+      "date": "2020-07-01",
+      "cpo": 1807397.0,
+      "mining": 87.885,
+      "manufacturing": 127.397,
+      "retail": 138.813
+    },
+    {
+      "date": "2020-08-01",
+      "cpo": 1863309.0,
+      "mining": 86.181,
+      "manufacturing": 124.684,
+      "retail": 139.005
+    },
+    {
+      "date": "2020-09-01",
+      "cpo": 1869256.0,
+      "mining": 84.984,
+      "manufacturing": 127.298,
+      "retail": 136.115
+    },
+    {
+      "date": "2020-10-01",
+      "cpo": 1724559.0,
+      "mining": 90.824,
+      "manufacturing": 127.442,
+      "retail": 135.532
+    },
+    {
+      "date": "2020-11-01",
+      "cpo": 1491074.0,
+      "mining": 89.016,
+      "manufacturing": 123.727,
+      "retail": 138.87
+    },
+    {
+      "date": "2020-12-01",
+      "cpo": 1333639.0,
+      "mining": 97.523,
+      "manufacturing": 127.771,
+      "retail": 145.326
+    },
+    {
+      "date": "2021-01-01",
+      "cpo": 1126457.0,
+      "mining": 100.92,
+      "manufacturing": 127.512,
+      "retail": 143.239
+    },
+    {
+      "date": "2021-02-01",
+      "cpo": 1108236.0,
+      "mining": 92.262,
+      "manufacturing": 120.126,
+      "retail": 138.716
+    },
+    {
+      "date": "2021-03-01",
+      "cpo": 1423483.0,
+      "mining": 98.267,
+      "manufacturing": 128.285,
+      "retail": 138.093
+    },
+    {
+      "date": "2021-04-01",
+      "cpo": 1528121.0,
+      "mining": 92.895,
+      "manufacturing": 122.83,
+      "retail": 134.888
+    },
+    {
+      "date": "2021-05-01",
+      "cpo": 1571525.0,
+      "mining": 99.423,
+      "manufacturing": 120.425,
+      "retail": 132.086
+    },
+    {
+      "date": "2021-06-01",
+      "cpo": 1606187.0,
+      "mining": 92.316,
+      "manufacturing": 126.881,
+      "retail": 125.552
+    },
+    {
+      "date": "2021-07-01",
+      "cpo": 1527761.0,
+      "mining": 86.926,
+      "manufacturing": 119.112,
+      "retail": 125.951
+    },
+    {
+      "date": "2021-08-01",
+      "cpo": 1710356.0,
+      "mining": 84.256,
+      "manufacturing": 125.42,
+      "retail": 128.036
+    },
+    {
+      "date": "2021-09-01",
+      "cpo": 1703740.0,
+      "mining": 80.205,
+      "manufacturing": 132.329,
+      "retail": 132.288
+    },
+    {
+      "date": "2021-10-01",
+      "cpo": 1725837.0,
+      "mining": 87.789,
+      "manufacturing": 137.62,
+      "retail": 138.535
+    },
+    {
+      "date": "2021-11-01",
+      "cpo": 1634932.0,
+      "mining": 91.382,
+      "manufacturing": 137.72,
+      "retail": 143.436
+    },
+    {
+      "date": "2021-12-01",
+      "cpo": 1449719.0,
+      "mining": 95.119,
+      "manufacturing": 138.457,
+      "retail": 145.981
+    },
+    {
+      "date": "2022-01-01",
+      "cpo": 1253581.0,
+      "mining": 97.544,
+      "manufacturing": 136.142,
+      "retail": 147.199
+    },
+    {
+      "date": "2022-02-01",
+      "cpo": 1137462.0,
+      "mining": 91.628,
+      "manufacturing": 126.386,
+      "retail": 146.236
+    },
+    {
+      "date": "2022-03-01",
+      "cpo": 1411223.0,
+      "mining": 97.876,
+      "manufacturing": 137.172,
+      "retail": 148.137
+    },
+    {
+      "date": "2022-04-01",
+      "cpo": 1462053.0,
+      "mining": 91.522,
+      "manufacturing": 130.431,
+      "retail": 157.277
+    },
+    {
+      "date": "2022-05-01",
+      "cpo": 1461029.0,
+      "mining": 92.266,
+      "manufacturing": 128.772,
+      "retail": 164.047
+    },
+    {
+      "date": "2022-06-01",
+      "cpo": 1545111.0,
+      "mining": 94.099,
+      "manufacturing": 145.197,
+      "retail": 164.856
+    },
+    {
+      "date": "2022-07-01",
+      "cpo": 1573563.0,
+      "mining": 92.006,
+      "manufacturing": 136.878,
+      "retail": 165.768
+    },
+    {
+      "date": "2022-08-01",
+      "cpo": 1725787.0,
+      "mining": 90.789,
+      "manufacturing": 144.496,
+      "retail": 166.539
+    },
+    {
+      "date": "2022-09-01",
+      "cpo": 1770441.0,
+      "mining": 93.396,
+      "manufacturing": 146.11,
+      "retail": 168.135
+    },
+    {
+      "date": "2022-10-01",
+      "cpo": 1813596.0,
+      "mining": 95.937,
+      "manufacturing": 143.414,
+      "retail": 169.365
+    },
+    {
+      "date": "2022-11-01",
+      "cpo": 1680741.0,
+      "mining": 98.381,
+      "manufacturing": 144.382,
+      "retail": 169.657
+    },
+    {
+      "date": "2022-12-01",
+      "cpo": 1618833.0,
+      "mining": 98.347,
+      "manufacturing": 142.636,
+      "retail": 171.387
+    },
+    {
+      "date": "2023-01-01",
+      "cpo": 1380410.0,
+      "mining": 101.559,
+      "manufacturing": 137.94,
+      "retail": 171.036
+    },
+    {
+      "date": "2023-02-01",
+      "cpo": 1253573.0,
+      "mining": 92.815,
+      "manufacturing": 132.436,
+      "retail": 166.821
+    },
+    {
+      "date": "2023-03-01",
+      "cpo": 1288354.0,
+      "mining": 100.296,
+      "manufacturing": 142.774,
+      "retail": 168.575
+    },
+    {
+      "date": "2023-04-01",
+      "cpo": 1194559.0,
+      "mining": 89.225,
+      "manufacturing": 126.484,
+      "retail": 173.061
+    },
+    {
+      "date": "2023-05-01",
+      "cpo": 1517634.0,
+      "mining": 94.289,
+      "manufacturing": 135.359,
+      "retail": 167.92
+    },
+    {
+      "date": "2023-06-01",
+      "cpo": 1447697.0,
+      "mining": 86.506,
+      "manufacturing": 142.823,
+      "retail": 169.139
+    },
+    {
+      "date": "2023-07-01",
+      "cpo": 1609927.0,
+      "mining": 92.084,
+      "manufacturing": 136.619,
+      "retail": 170.311
+    },
+    {
+      "date": "2023-08-01",
+      "cpo": 1753472.0,
+      "mining": 89.136,
+      "manufacturing": 143.611,
+      "retail": 172.841
+    },
+    {
+      "date": "2023-09-01",
+      "cpo": 1829434.0,
+      "mining": 87.626,
+      "manufacturing": 146.664,
+      "retail": 174.468
+    },
+    {
+      "date": "2023-10-01",
+      "cpo": 1937224.0,
+      "mining": 100.575,
+      "manufacturing": 144.746,
+      "retail": 173.261
+    },
+    {
+      "date": "2023-11-01",
+      "cpo": 1788870.0,
+      "mining": 100.266,
+      "manufacturing": 144.304,
+      "retail": 174.509
+    },
+    {
+      "date": "2023-12-01",
+      "cpo": 1550796.0,
+      "mining": 101.903,
+      "manufacturing": 140.598,
+      "retail": 177.571
+    },
+    {
+      "date": "2024-01-01",
+      "cpo": 1402355.0,
+      "mining": 104.72,
+      "manufacturing": 143.064,
+      "retail": 173.46
+    },
+    {
+      "date": "2024-02-01",
+      "cpo": 1259382.0,
+      "mining": 98.062,
+      "manufacturing": 134.084,
+      "retail": 174.451
+    },
+    {
+      "date": "2024-03-01",
+      "cpo": 1392471.0,
+      "mining": 103.696,
+      "manufacturing": 144.632,
+      "retail": 177.625
+    },
+    {
+      "date": "2024-04-01",
+      "cpo": 1501905.0,
+      "mining": 95.812,
+      "manufacturing": 132.718,
+      "retail": 179.178
+    },
+    {
+      "date": "2024-05-01",
+      "cpo": 1704495.0,
+      "mining": 88.878,
+      "manufacturing": 141.588,
+      "retail": 179.279
+    },
+    {
+      "date": "2024-06-01",
+      "cpo": 1615283.0,
+      "mining": 91.96,
+      "manufacturing": 150.207,
+      "retail": 179.772
+    },
+    {
+      "date": "2024-07-01",
+      "cpo": 1840999.0,
+      "mining": 90.702,
+      "manufacturing": 147.191,
+      "retail": 178.062
+    },
+    {
+      "date": "2024-08-01",
+      "cpo": 1893859.0,
+      "mining": 82.58,
+      "manufacturing": 153.006,
+      "retail": 179.669
+    },
+    {
+      "date": "2024-09-01",
+      "cpo": 1821933.0,
+      "mining": 87.195,
+      "manufacturing": 151.303,
+      "retail": 181.025
+    },
+    {
+      "date": "2024-10-01",
+      "cpo": 1797348.0,
+      "mining": 99.845,
+      "manufacturing": 149.475,
+      "retail": 181.967
+    },
+    {
+      "date": "2024-11-01",
+      "cpo": 1621294.0,
+      "mining": 100.035,
+      "manufacturing": 150.995,
+      "retail": 181.69
+    },
+    {
+      "date": "2024-12-01",
+      "cpo": 1486942.0,
+      "mining": 102.777,
+      "manufacturing": 148.7,
+      "retail": 183.907
+    },
+    {
+      "date": "2025-01-01",
+      "cpo": 1239895.0,
+      "mining": 102.273,
+      "manufacturing": 148.41,
+      "retail": 184.924
+    },
+    {
+      "date": "2025-02-01",
+      "cpo": 1188443.0,
+      "mining": 89.501,
+      "manufacturing": 140.454,
+      "retail": 181.453
+    },
+    {
+      "date": "2025-03-01",
+      "cpo": 1387616.0,
+      "mining": 105.443,
+      "manufacturing": 150.458,
+      "retail": 186.392
+    },
+    {
+      "date": "2025-04-01",
+      "cpo": 1686379.0,
+      "mining": 90.837,
+      "manufacturing": 140.099,
+      "retail": 185.202
+    },
+    {
+      "date": "2025-05-01",
+      "cpo": 1771621.0,
+      "mining": 79.233,
+      "manufacturing": 145.483,
+      "retail": 185.979
+    },
+    {
+      "date": "2025-06-01",
+      "cpo": 1692370.0,
+      "mining": 91.781,
+      "manufacturing": 155.563,
+      "retail": 187.215
+    },
+    {
+      "date": "2025-07-01",
+      "cpo": 1812467.0,
+      "mining": 93.754,
+      "manufacturing": 153.605,
+      "retail": 185.821
+    },
+    {
+      "date": "2025-08-01",
+      "cpo": 1854756.0,
+      "mining": 97.683,
+      "manufacturing": 157.23,
+      "retail": 186.33
+    },
+    {
+      "date": "2025-09-01",
+      "cpo": 1840983.0,
+      "mining": 94.817,
+      "manufacturing": 158.826,
+      "retail": 189.691
+    },
+    {
+      "date": "2025-10-01",
+      "cpo": 2043886.0,
+      "mining": 104.374,
+      "manufacturing": 159.146,
+      "retail": 190.356
+    },
+    {
+      "date": "2025-11-01",
+      "cpo": 1935510.0,
+      "mining": 101.094,
+      "manufacturing": 158.337,
+      "retail": 189.653
+    },
+    {
+      "date": "2025-12-01",
+      "cpo": 1829549.0,
+      "mining": 100.211,
+      "manufacturing": 158.715,
+      "retail": 192.89
+    },
+    {
+      "date": "2026-01-01",
+      "cpo": 1576013.0,
+      "mining": 102.338,
+      "manufacturing": 159.265,
+      "retail": 191.701
+    },
+    {
+      "date": "2026-02-01",
+      "cpo": 1284881.0,
+      "mining": 87.743,
+      "manufacturing": 146.346,
+      "retail": 191.201
+    },
+    {
+      "date": "2026-03-01",
+      "cpo": 1376672.0,
+      "mining": 98.542,
+      "manufacturing": 158.665,
+      "retail": 196.171
+    },
+    {
+      "date": "2026-04-01",
+      "cpo": 1629739.0,
+      "mining": 96.991,
+      "manufacturing": 151.754,
+      "retail": 192.383
+    },
+    {
+      "date": "2026-05-01",
+      "cpo": 1515912.0,
+      "mining": 94.901,
+      "manufacturing": 155.014,
+      "retail": 194.217
+    },
+    {
+      "date": "2026-06-01",
+      "cpo": 1638475.0,
+      "mining": 94.62,
+      "manufacturing": 166.847,
+      "retail": 195.052
+    },
+    {
+      "date": "2026-07-01",
+      "cpo": 1792596.0,
+      "mining": 90.719,
+      "manufacturing": 163.442,
+      "retail": 193.487
+    },
+    {
+      "date": "2026-08-01",
+      "cpo": 1817499.0,
+      "mining": 90.424,
+      "manufacturing": 168.929,
+      "retail": 193.442
+    },
+    {
+      "date": "2026-09-01",
+      "cpo": 2116950.0,
+      "mining": null,
+      "manufacturing": null,
+      "retail": null
+    }
+  ],
+  "quarterly": [
+    {
+      "quarter": "2015Q1",
+      "servicesVolume": 98.5,
+      "servicesPublished": null,
+      "constructionWork": 28740793.73723828,
+      "constructionPublished": "2015-05-12"
+    },
+    {
+      "quarter": "2015Q2",
+      "servicesVolume": 98.1,
+      "servicesPublished": null,
+      "constructionWork": 27239138.655,
+      "constructionPublished": "2015-08-11"
+    },
+    {
+      "quarter": "2015Q3",
+      "servicesVolume": 100.4,
+      "servicesPublished": null,
+      "constructionWork": 28834152.066,
+      "constructionPublished": "2015-11-09"
+    },
+    {
+      "quarter": "2015Q4",
+      "servicesVolume": 103.1,
+      "servicesPublished": null,
+      "constructionWork": 30128938.337,
+      "constructionPublished": "2016-02-11"
+    },
+    {
+      "quarter": "2016Q1",
+      "servicesVolume": 103.3,
+      "servicesPublished": null,
+      "constructionWork": 31941170.387,
+      "constructionPublished": "2016-05-12"
+    },
+    {
+      "quarter": "2016Q2",
+      "servicesVolume": 103.7,
+      "servicesPublished": null,
+      "constructionWork": 30427273.524869144,
+      "constructionPublished": "2016-08-11"
+    },
+    {
+      "quarter": "2016Q3",
+      "servicesVolume": 106.7,
+      "servicesPublished": null,
+      "constructionWork": 31909992.726,
+      "constructionPublished": "2016-11-10"
+    },
+    {
+      "quarter": "2016Q4",
+      "servicesVolume": 109.3,
+      "servicesPublished": null,
+      "constructionWork": 32559567.879,
+      "constructionPublished": "2017-02-10"
+    },
+    {
+      "quarter": "2017Q1",
+      "servicesVolume": 109.7,
+      "servicesPublished": null,
+      "constructionWork": 35053463.758190006,
+      "constructionPublished": "2017-05-11"
+    },
+    {
+      "quarter": "2017Q2",
+      "servicesVolume": 111.1,
+      "servicesPublished": null,
+      "constructionWork": 33825084.404,
+      "constructionPublished": "2017-08-10"
+    },
+    {
+      "quarter": "2017Q3",
+      "servicesVolume": 114.1,
+      "servicesPublished": null,
+      "constructionWork": 34495001.81513001,
+      "constructionPublished": "2017-11-09"
+    },
+    {
+      "quarter": "2017Q4",
+      "servicesVolume": 116.7,
+      "servicesPublished": null,
+      "constructionWork": 35077955.51462,
+      "constructionPublished": "2018-02-09"
+    },
+    {
+      "quarter": "2018Q1",
+      "servicesVolume": 117.3,
+      "servicesPublished": null,
+      "constructionWork": 37123930.52056,
+      "constructionPublished": "2018-05-10"
+    },
+    {
+      "quarter": "2018Q2",
+      "servicesVolume": 118.8,
+      "servicesPublished": null,
+      "constructionWork": 35624698.7148,
+      "constructionPublished": "2018-08-10"
+    },
+    {
+      "quarter": "2018Q3",
+      "servicesVolume": 123.0,
+      "servicesPublished": null,
+      "constructionWork": 36287482.1489371,
+      "constructionPublished": "2018-11-09"
+    },
+    {
+      "quarter": "2018Q4",
+      "servicesVolume": 125.2,
+      "servicesPublished": null,
+      "constructionWork": 36511049.311,
+      "constructionPublished": "2019-02-11"
+    },
+    {
+      "quarter": "2019Q1",
+      "servicesVolume": 125.1,
+      "servicesPublished": null,
+      "constructionWork": 37397513.44099999,
+      "constructionPublished": "2019-05-10"
+    },
+    {
+      "quarter": "2019Q2",
+      "servicesVolume": 126.5,
+      "servicesPublished": null,
+      "constructionWork": 35919138.660935,
+      "constructionPublished": "2019-08-09"
+    },
+    {
+      "quarter": "2019Q3",
+      "servicesVolume": 130.7,
+      "servicesPublished": null,
+      "constructionWork": 36076604.2167,
+      "constructionPublished": "2019-11-11"
+    },
+    {
+      "quarter": "2019Q4",
+      "servicesVolume": 133.2,
+      "servicesPublished": null,
+      "constructionWork": 36978459.6424613,
+      "constructionPublished": "2020-02-10"
+    },
+    {
+      "quarter": "2020Q1",
+      "servicesVolume": 127.9,
+      "servicesPublished": null,
+      "constructionWork": 35040151.9344352,
+      "constructionPublished": "2020-05-12"
+    },
+    {
+      "quarter": "2020Q2",
+      "servicesVolume": 99.2,
+      "servicesPublished": null,
+      "constructionWork": 19780062.712788973,
+      "constructionPublished": "2020-08-10"
+    },
+    {
+      "quarter": "2020Q3",
+      "servicesVolume": 123.4,
+      "servicesPublished": null,
+      "constructionWork": 31367003.458087124,
+      "constructionPublished": "2020-11-10"
+    },
+    {
+      "quarter": "2020Q4",
+      "servicesVolume": 124.0,
+      "servicesPublished": null,
+      "constructionWork": 31730845.9157612,
+      "constructionPublished": "2021-02-10"
+    },
+    {
+      "quarter": "2021Q1",
+      "servicesVolume": 123.5,
+      "servicesPublished": null,
+      "constructionWork": 31369047.408124924,
+      "constructionPublished": "2021-05-10"
+    },
+    {
+      "quarter": "2021Q2",
+      "servicesVolume": 116.8,
+      "servicesPublished": null,
+      "constructionWork": 28211661.02806525,
+      "constructionPublished": "2021-08-09"
+    },
+    {
+      "quarter": "2021Q3",
+      "servicesVolume": 114.1,
+      "servicesPublished": null,
+      "constructionWork": 24775795.08637724,
+      "constructionPublished": "2021-11-11"
+    },
+    {
+      "quarter": "2021Q4",
+      "servicesVolume": 127.7,
+      "servicesPublished": null,
+      "constructionWork": 27625856.158380788,
+      "constructionPublished": "2022-02-08"
+    },
+    {
+      "quarter": "2022Q1",
+      "servicesVolume": 132.3,
+      "servicesPublished": null,
+      "constructionWork": 29460996.1497652,
+      "constructionPublished": "2022-05-11"
+    },
+    {
+      "quarter": "2022Q2",
+      "servicesVolume": 136.3,
+      "servicesPublished": "2022-08-11",
+      "constructionWork": 29936071.5711065,
+      "constructionPublished": "2022-08-09"
+    },
+    {
+      "quarter": "2022Q3",
+      "servicesVolume": 140.5,
+      "servicesPublished": "2022-11-09",
+      "constructionWork": 30518583.0318841,
+      "constructionPublished": "2022-11-08"
+    },
+    {
+      "quarter": "2022Q4",
+      "servicesVolume": 142.7,
+      "servicesPublished": "2023-02-08",
+      "constructionWork": 31973672.66845001,
+      "constructionPublished": "2023-02-08"
+    },
+    {
+      "quarter": "2023Q1",
+      "servicesVolume": 143.9,
+      "servicesPublished": "2023-05-10",
+      "constructionWork": 32218460.8592212,
+      "constructionPublished": "2023-05-10"
+    },
+    {
+      "quarter": "2023Q2",
+      "servicesVolume": 142.6,
+      "servicesPublished": "2023-08-09",
+      "constructionWork": 32352864.599452343,
+      "constructionPublished": "2023-08-09"
+    },
+    {
+      "quarter": "2023Q3",
+      "servicesVolume": 147.7,
+      "servicesPublished": "2023-11-09",
+      "constructionWork": 33437241.429228008,
+      "constructionPublished": "2023-11-08"
+    },
+    {
+      "quarter": "2023Q4",
+      "servicesVolume": 148.5,
+      "servicesPublished": "2024-02-08",
+      "constructionWork": 34147037.0773949,
+      "constructionPublished": "2024-02-13"
+    },
+    {
+      "quarter": "2024Q1",
+      "servicesVolume": 150.4,
+      "servicesPublished": "2024-05-09",
+      "constructionWork": 36786060.0125988,
+      "constructionPublished": "2024-05-13"
+    },
+    {
+      "quarter": "2024Q2",
+      "servicesVolume": 152.2,
+      "servicesPublished": "2024-08-08",
+      "constructionWork": 38890112.64678532,
+      "constructionPublished": "2024-08-12"
+    },
+    {
+      "quarter": "2024Q3",
+      "servicesVolume": 156.0,
+      "servicesPublished": "2024-11-07",
+      "constructionWork": 41077728.14835,
+      "constructionPublished": "2024-11-11"
+    },
+    {
+      "quarter": "2024Q4",
+      "servicesVolume": 157.5,
+      "servicesPublished": "2025-02-12",
+      "constructionWork": 42049084.71205153,
+      "constructionPublished": "2025-02-10"
+    },
+    {
+      "quarter": "2025Q1",
+      "servicesVolume": 158.8,
+      "servicesPublished": "2025-05-13",
+      "constructionWork": 42894695.53080081,
+      "constructionPublished": "2025-05-09"
+    },
+    {
+      "quarter": "2025Q2",
+      "servicesVolume": 160.6,
+      "servicesPublished": "2025-08-08",
+      "constructionWork": 43925003.9457227,
+      "constructionPublished": "2025-08-11"
+    },
+    {
+      "quarter": "2025Q3",
+      "servicesVolume": 164.6,
+      "servicesPublished": "2025-11-11",
+      "constructionWork": 45417232.50622109,
+      "constructionPublished": "2025-11-12"
+    },
+    {
+      "quarter": "2025Q4",
+      "servicesVolume": 167.7,
+      "servicesPublished": "2026-02-10",
+      "constructionWork": 46383312.17867845,
+      "constructionPublished": "2026-02-11"
+    },
+    {
+      "quarter": "2026Q1",
+      "servicesVolume": 167.9,
+      "servicesPublished": "2026-05-11",
+      "constructionWork": 46536542.50112769,
+      "constructionPublished": "2026-05-13"
+    },
+    {
+      "quarter": "2026Q2",
+      "servicesVolume": 170.1,
+      "servicesPublished": "2026-08-12",
+      "constructionWork": 47799282.82929376,
+      "constructionPublished": "2026-08-13"
+    },
+    {
+      "quarter": "2026Q3",
+      "servicesVolume": null,
+      "servicesPublished": null,
+      "constructionWork": null,
+      "constructionPublished": null
+    }
+  ],
+  "releases": {
+    "ipi": {
+      "2022-10-01": "2022-12-12",
+      "2023-01-01": "2023-03-13",
+      "2023-02-01": "2023-04-11",
+      "2023-03-01": "2023-05-09",
+      "2023-04-01": "2023-06-09",
+      "2023-05-01": "2023-07-12",
+      "2023-06-01": "2023-08-08",
+      "2023-07-01": "2023-09-11",
+      "2023-08-01": "2023-10-12",
+      "2023-09-01": "2023-11-07",
+      "2023-10-01": "2023-12-11",
+      "2023-11-01": "2024-01-11",
+      "2023-12-01": "2024-02-07",
+      "2024-01-01": "2024-03-12",
+      "2024-02-01": "2024-04-08",
+      "2024-03-01": "2024-05-10",
+      "2024-04-01": "2024-06-10",
+      "2024-05-01": "2024-07-12",
+      "2024-06-01": "2024-08-09",
+      "2024-07-01": "2024-09-10",
+      "2024-08-01": "2024-10-11",
+      "2024-09-01": "2024-11-08",
+      "2024-10-01": "2024-12-10",
+      "2024-11-01": "2025-01-10",
+      "2024-12-01": "2025-02-07",
+      "2025-01-01": "2025-03-12",
+      "2025-02-01": "2025-04-11",
+      "2025-03-01": "2025-05-08",
+      "2025-04-01": "2025-06-11",
+      "2025-05-01": "2025-07-11",
+      "2025-06-01": "2025-08-07",
+      "2025-07-01": "2025-09-11",
+      "2025-08-01": "2025-10-10",
+      "2025-09-01": "2025-11-07",
+      "2025-10-01": "2025-12-12",
+      "2025-11-01": "2026-01-09",
+      "2025-12-01": "2026-02-09",
+      "2026-01-01": "2026-03-10",
+      "2026-02-01": "2026-04-09",
+      "2026-03-01": "2026-05-08",
+      "2026-04-01": "2026-06-12",
+      "2026-05-01": "2026-07-09",
+      "2026-06-01": "2026-08-11",
+      "2026-07-01": "2026-09-09",
+      "2026-08-01": "2026-10-09"
+    },
+    "retail": {
+      "2022-11-01": "2023-01-11",
+      "2022-12-01": "2023-02-08",
+      "2023-01-01": "2023-03-13",
+      "2023-02-01": "2023-04-11",
+      "2023-03-01": "2023-05-10",
+      "2023-04-01": "2023-06-12",
+      "2023-05-01": "2023-07-12",
+      "2023-06-01": "2023-08-09",
+      "2023-07-01": "2023-09-11",
+      "2023-08-01": "2023-10-12",
+      "2023-09-01": "2023-11-09",
+      "2023-10-01": "2023-12-11",
+      "2023-11-01": "2024-01-11",
+      "2023-12-01": "2024-02-08",
+      "2024-01-01": "2024-03-13",
+      "2024-02-01": "2024-04-08",
+      "2024-03-01": "2024-05-09",
+      "2024-04-01": "2024-06-11",
+      "2024-05-01": "2024-07-11",
+      "2024-06-01": "2024-08-08",
+      "2024-07-01": "2024-09-09",
+      "2024-08-01": "2024-10-11",
+      "2024-09-01": "2024-11-07",
+      "2024-10-01": "2024-12-11",
+      "2024-11-01": "2025-01-13",
+      "2024-12-01": "2025-02-12",
+      "2025-01-01": "2025-03-12",
+      "2025-02-01": "2025-04-11",
+      "2025-03-01": "2025-05-13",
+      "2025-04-01": "2025-06-13",
+      "2025-05-01": "2025-07-14",
+      "2025-06-01": "2025-08-08",
+      "2025-07-01": "2025-09-12",
+      "2025-08-01": "2025-10-10",
+      "2025-09-01": "2025-11-11",
+      "2025-10-01": "2025-12-12",
+      "2025-11-01": "2026-01-09",
+      "2025-12-01": "2026-02-10",
+      "2026-01-01": "2026-03-12",
+      "2026-02-01": "2026-04-10",
+      "2026-03-01": "2026-05-11",
+      "2026-04-01": "2026-06-12",
+      "2026-05-01": "2026-07-10",
+      "2026-06-01": "2026-08-12",
+      "2026-07-01": "2026-09-11",
+      "2026-08-01": "2026-10-09"
+    },
+    "gdp": {
+      "2023Q1": "2023-05-12",
+      "2023Q2": "2023-08-18",
+      "2023Q3": "2023-11-17",
+      "2023Q4": "2024-02-16",
+      "2024Q1": "2024-05-17",
+      "2024Q2": "2024-08-16",
+      "2024Q3": "2024-11-15",
+      "2024Q4": "2025-02-14",
+      "2025Q1": "2025-05-16",
+      "2025Q2": "2025-08-15",
+      "2025Q3": "2025-11-14",
+      "2025Q4": "2026-02-13",
+      "2026Q1": "2026-05-15",
+      "2026Q2": "2026-08-14"
+    }
+  },
+  "sources": [
+    {
+      "id": "gdp",
+      "name": "Real GDP components",
+      "url": "https://storage.dosm.gov.my/gdp/gdp_qtr_real_supply.csv",
+      "units": "RM million, constant 2015 prices",
+      "frequency": "Quarterly",
+      "provider": "DOSM",
+      "observations": 46,
+      "latest": "2026Q2",
+      "downloadedAt": "2026-11-10T17:31:18+08:00"
+    },
+    {
+      "id": "cpo",
+      "name": "Crude palm oil production",
+      "url": "https://bepi.mpob.gov.my/stat/web_report1.php?val=202684",
+      "units": "Tonnes",
+      "frequency": "Monthly",
+      "provider": "MPOB",
+      "observations": 142,
+      "latest": "2026-10-01",
+      "downloadedAt": "2026-11-10T17:31:18+08:00"
+    },
+    {
+      "id": "mining",
+      "name": "Mining industrial production",
+      "url": "https://storage.dosm.gov.my/ipi/ipi_1d.csv",
+      "units": "Index, 2015=100",
+      "frequency": "Monthly",
+      "provider": "DOSM",
+      "observations": 140,
+      "latest": "2026-08-01",
+      "downloadedAt": "2026-11-10T17:31:18+08:00"
+    },
+    {
+      "id": "manufacturing",
+      "name": "Manufacturing industrial production",
+      "url": "https://storage.dosm.gov.my/ipi/ipi_1d.csv",
+      "units": "Index, 2015=100",
+      "frequency": "Monthly",
+      "provider": "DOSM",
+      "observations": 140,
+      "latest": "2026-08-01",
+      "downloadedAt": "2026-11-10T17:31:18+08:00"
+    },
+    {
+      "id": "retail",
+      "name": "Retail trade volume",
+      "url": "https://storage.dosm.gov.my/iowrt/iowrt_2d.csv",
+      "units": "Index, 2015=100",
+      "frequency": "Monthly",
+      "provider": "DOSM",
+      "observations": 104,
+      "latest": "2026-08-01",
+      "downloadedAt": "2026-11-10T17:31:18+08:00"
+    },
+    {
+      "id": "servicesVolume",
+      "name": "Services volume index",
+      "url": "https://www.dosm.gov.my/portal-main/release-content/volume-index-of-services-Q22026",
+      "units": "Index, 2015=100",
+      "frequency": "Quarterly",
+      "provider": "DOSM",
+      "observations": 46,
+      "latest": "2026Q2",
+      "downloadedAt": "2026-11-10T17:31:18+08:00"
+    },
+    {
+      "id": "constructionWork",
+      "name": "Construction work done",
+      "url": "https://open.dosm.gov.my/dashboard/construction-statistics",
+      "units": "RM thousand, nominal",
+      "frequency": "Quarterly",
+      "provider": "DOSM",
+      "observations": 46,
+      "latest": "2026Q2",
+      "downloadedAt": "2026-11-10T17:31:18+08:00"
+    }
+  ],
+  "snapshotId": "380fcada8c75439c"
+}

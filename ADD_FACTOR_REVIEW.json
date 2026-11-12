@@ -1,0 +1,527 @@
+{
+  "snapshotId": "4d290d2c77498747",
+  "calibration": "2023Q1–2024Q4",
+  "review": "2025Q1–2026Q2",
+  "stages": {
+    "Early": {
+      "sectors": [
+        {
+          "sector": "agriculture",
+          "calibrationMeanActualMinusModelPP": 0.32679860263738486,
+          "candidatePP": 0.3,
+          "calibrationSameSignCount": 3,
+          "reviewBiasPP": -0.24643867946342599,
+          "rawMAE": 1.8411355583214288,
+          "candidateMAE": 1.8411355583214288,
+          "rawRMSE": 2.1186744184911674,
+          "candidateRMSE": 2.174084749784824
+        },
+        {
+          "sector": "mining",
+          "calibrationMeanActualMinusModelPP": 0.387435644701329,
+          "candidatePP": 0.4,
+          "calibrationSameSignCount": 6,
+          "reviewBiasPP": -0.782902169956932,
+          "rawMAE": 1.370935304233799,
+          "candidateMAE": 1.5042686375671321,
+          "rawRMSE": 1.565064112487693,
+          "candidateRMSE": 1.7988183377324225
+        },
+        {
+          "sector": "manufacturing",
+          "calibrationMeanActualMinusModelPP": -0.8762780978251311,
+          "candidatePP": -0.9,
+          "calibrationSameSignCount": 6,
+          "reviewBiasPP": 0.18265942713256766,
+          "rawMAE": 0.3408174757934385,
+          "candidateMAE": 1.0826594271325678,
+          "rawRMSE": 0.37238179275291733,
+          "candidateRMSE": 1.1302456230450524
+        },
+        {
+          "sector": "construction",
+          "calibrationMeanActualMinusModelPP": 1.3232602532892797,
+          "candidatePP": 1.3,
+          "calibrationSameSignCount": 5,
+          "reviewBiasPP": -2.3961775169497157,
+          "rawMAE": 2.3961775169497157,
+          "candidateMAE": 3.6961775169497155,
+          "rawRMSE": 3.208838277444574,
+          "candidateRMSE": 4.268103165911378
+        },
+        {
+          "sector": "services",
+          "calibrationMeanActualMinusModelPP": 0.4227218067969877,
+          "candidatePP": 0.4,
+          "calibrationSameSignCount": 7,
+          "reviewBiasPP": 0.2225289301747911,
+          "rawMAE": 0.5234750803360116,
+          "candidateMAE": 0.4928060756106065,
+          "rawRMSE": 0.6326756947320753,
+          "candidateRMSE": 0.618268057208911
+        },
+        {
+          "sector": "duties",
+          "calibrationMeanActualMinusModelPP": 1.4147340584440826,
+          "candidatePP": 1.4,
+          "calibrationSameSignCount": 4,
+          "reviewBiasPP": 9.685294814543086,
+          "rawMAE": 11.201699925299456,
+          "candidateMAE": 10.268366591966123,
+          "rawRMSE": 13.000442567658741,
+          "candidateRMSE": 11.993860157358545
+        }
+      ],
+      "headline": {
+        "rawMAE": 0.36329338976707204,
+        "adjustedMAE": 0.36329338976707204,
+        "rawRMSE": 0.4870795219619473,
+        "adjustedRMSE": 0.4870795219619473
+      },
+      "rows": [
+        {
+          "quarter": "2023Q1",
+          "headlineErrorPP": -0.44829338529417395,
+          "servicesWeight": 0.58138787737928,
+          "errorsPP": {
+            "agriculture": -1.5412857771485877,
+            "mining": 0.7936570765257864,
+            "manufacturing": -0.3606817358471154,
+            "construction": -3.2521860869347385,
+            "services": 1.0890526751754017,
+            "duties": 5.963562852444907
+          }
+        },
+        {
+          "quarter": "2023Q2",
+          "headlineErrorPP": 0.37372182633346185,
+          "servicesWeight": 0.5842921826166014,
+          "errorsPP": {
+            "agriculture": -0.5920882178770907,
+            "mining": -1.9411628006922361,
+            "manufacturing": -2.2615258573384955,
+            "construction": -1.284001907780974,
+            "services": 0.6525697993630188,
+            "duties": -0.21402902640605265
+          }
+        },
+        {
+          "quarter": "2023Q3",
+          "headlineErrorPP": -0.4595361183603819,
+          "servicesWeight": 0.5820525730184438,
+          "errorsPP": {
+            "agriculture": -0.16670644923984704,
+            "mining": -0.9524863503150328,
+            "manufacturing": -1.4851357266984182,
+            "construction": 1.7660181572812794,
+            "services": 1.3932578686493176,
+            "duties": 1.0208224693234262
+          }
+        },
+        {
+          "quarter": "2023Q4",
+          "headlineErrorPP": 0.4268200062543581,
+          "servicesWeight": 0.5860604282680574,
+          "errorsPP": {
+            "agriculture": -0.2766985024086491,
+            "mining": 0.7068398450888004,
+            "manufacturing": -2.055107216957969,
+            "construction": -4.222569619270811,
+            "services": 0.2667403658225709,
+            "duties": 2.5063560155315954
+          }
+        },
+        {
+          "quarter": "2024Q1",
+          "headlineErrorPP": -0.2569854761514945,
+          "servicesWeight": 0.5903914563551895,
+          "errorsPP": {
+            "agriculture": 1.2253346666606209,
+            "mining": 0.7958032843464712,
+            "manufacturing": -0.8679195010010767,
+            "construction": 8.469258752375808,
+            "services": 0.10653856216822563,
+            "duties": -3.1835164786019123
+          }
+        },
+        {
+          "quarter": "2024Q2",
+          "headlineErrorPP": -0.7728099599331628,
+          "servicesWeight": 0.5941059614882,
+          "errorsPP": {
+            "agriculture": 4.395910649283565,
+            "mining": 2.3365599003259545,
+            "manufacturing": 0.3207923806712268,
+            "construction": 5.6497100579867565,
+            "services": 0.229033420785707,
+            "duties": -4.7364378037807935
+          }
+        },
+        {
+          "quarter": "2024Q3",
+          "headlineErrorPP": -0.25478247045265245,
+          "servicesWeight": 0.5925339297617557,
+          "errorsPP": {
+            "agriculture": 0.22675237813209112,
+            "mining": 1.1700320705994618,
+            "manufacturing": -0.4096041675168638,
+            "construction": 2.5976357275731,
+            "services": 0.04086528756431368,
+            "duties": 12.940609787537694
+          }
+        },
+        {
+          "quarter": "2024Q4",
+          "headlineErrorPP": 0.245616011949501,
+          "servicesWeight": 0.5933251312308105,
+          "errorsPP": {
+            "agriculture": -0.6568299263030243,
+            "mining": 0.1902421317314272,
+            "manufacturing": 0.10895704208766233,
+            "construction": 0.8622169450838157,
+            "services": -0.3962835251526541,
+            "duties": -2.9794953484962026
+          }
+        },
+        {
+          "quarter": "2025Q1",
+          "headlineErrorPP": 0.6687670230602016,
+          "servicesWeight": 0.5937091524187583,
+          "errorsPP": {
+            "agriculture": 1.4691161734780744,
+            "mining": 1.305776558127708,
+            "manufacturing": -0.15547758605191503,
+            "construction": -6.708447238623072,
+            "services": -0.8317245578947752,
+            "duties": -4.549215332269108
+          }
+        },
+        {
+          "quarter": "2025Q2",
+          "headlineErrorPP": -0.08682276869484973,
+          "servicesWeight": 0.5942738937243491,
+          "errorsPP": {
+            "agriculture": 0.6063569963149704,
+            "mining": 0.45832284470289225,
+            "manufacturing": -0.31899655993069753,
+            "construction": -2.083269240636132,
+            "services": -0.07111389258888656,
+            "duties": 19.402763187901567
+          }
+        },
+        {
+          "quarter": "2025Q3",
+          "headlineErrorPP": -0.39476821754869107,
+          "servicesWeight": 0.5912066888733186,
+          "errorsPP": {
+            "agriculture": -0.7574125310128164,
+            "mining": -0.32614851193609323,
+            "manufacturing": 0.4903129821376174,
+            "construction": -0.4084687248291141,
+            "services": 0.294098135491859,
+            "duties": 15.527056601817197
+          }
+        },
+        {
+          "quarter": "2025Q4",
+          "headlineErrorPP": -0.8939236260887551,
+          "servicesWeight": 0.595530563857283,
+          "errorsPP": {
+            "agriculture": 2.708617466780964,
+            "mining": -1.7537006672911206,
+            "manufacturing": 0.5859051637474195,
+            "construction": -0.7919889759036236,
+            "services": 1.0387129254078469,
+            "duties": 9.218871016209388
+          }
+        },
+        {
+          "quarter": "2026Q1",
+          "headlineErrorPP": 0.01992405272757125,
+          "servicesWeight": 0.5973201500976718,
+          "errorsPP": {
+            "agriculture": -1.9334438284692688,
+            "mining": -2.1984649732718267,
+            "manufacturing": 0.23565197195373755,
+            "construction": -3.199633632855514,
+            "services": 0.19790887868435664,
+            "duties": 16.98521162500557
+          }
+        },
+        {
+          "quarter": "2026Q2",
+          "headlineErrorPP": -0.11555465048236346,
+          "servicesWeight": 0.597321679644588,
+          "errorsPP": {
+            "agriculture": -3.5718663538724793,
+            "mining": -2.1831982700731514,
+            "manufacturing": 0.2585605909392441,
+            "construction": -1.1852572888508384,
+            "services": 0.7072920919483459,
+            "duties": 1.5270817885939036
+          }
+        }
+      ]
+    },
+    "Pre-GDP": {
+      "sectors": [
+        {
+          "sector": "agriculture",
+          "calibrationMeanActualMinusModelPP": 0.46686821072795004,
+          "candidatePP": 0.5,
+          "calibrationSameSignCount": 4,
+          "reviewBiasPP": -0.35961625372052247,
+          "rawMAE": 1.5677794285343063,
+          "candidateMAE": 1.5677794285343063,
+          "rawRMSE": 1.8767888841549232,
+          "candidateRMSE": 2.0327205340154375
+        },
+        {
+          "sector": "mining",
+          "calibrationMeanActualMinusModelPP": 0.330669506779693,
+          "candidatePP": 0.3,
+          "calibrationSameSignCount": 7,
+          "reviewBiasPP": -0.2119252787264413,
+          "rawMAE": 0.347559442584276,
+          "candidateMAE": 0.5144844806089753,
+          "rawRMSE": 0.4409558381061123,
+          "candidateRMSE": 0.6415584294479566
+        },
+        {
+          "sector": "manufacturing",
+          "calibrationMeanActualMinusModelPP": -0.06614092791113527,
+          "candidatePP": -0.1,
+          "calibrationSameSignCount": 5,
+          "reviewBiasPP": 0.08716468002497313,
+          "rawMAE": 0.12223140531666099,
+          "candidateMAE": 0.18889807198332764,
+          "rawRMSE": 0.13564404595749993,
+          "candidateRMSE": 0.2140846636466867
+        },
+        {
+          "sector": "construction",
+          "calibrationMeanActualMinusModelPP": 0.3319203165921795,
+          "candidatePP": 0.3,
+          "calibrationSameSignCount": 5,
+          "reviewBiasPP": 1.584154226085703,
+          "rawMAE": 1.772067297970622,
+          "candidateMAE": 1.5720672979706218,
+          "rawRMSE": 2.131688323592426,
+          "candidateRMSE": 1.919271365203177
+        },
+        {
+          "sector": "services",
+          "calibrationMeanActualMinusModelPP": 0.2318064518402169,
+          "candidatePP": 0.2,
+          "calibrationSameSignCount": 7,
+          "reviewBiasPP": 0.15656071965195326,
+          "rawMAE": 0.2188358973846881,
+          "candidateMAE": 0.16733956236549888,
+          "rawRMSE": 0.2511430136358449,
+          "candidateRMSE": 0.2011181877337624
+        },
+        {
+          "sector": "duties",
+          "calibrationMeanActualMinusModelPP": 1.4147340584440826,
+          "candidatePP": 1.4,
+          "calibrationSameSignCount": 4,
+          "reviewBiasPP": 9.685294814543086,
+          "rawMAE": 11.201699925299456,
+          "candidateMAE": 10.268366591966123,
+          "rawRMSE": 13.000442567658741,
+          "candidateRMSE": 11.993860157358545
+        }
+      ],
+      "headline": {
+        "rawMAE": 0.27234122621450085,
+        "adjustedMAE": 0.23276454406485828,
+        "rawRMSE": 0.3417132435673009,
+        "adjustedRMSE": 0.2632489550994959
+      },
+      "rows": [
+        {
+          "quarter": "2023Q1",
+          "headlineErrorPP": -0.0895238761063899,
+          "servicesWeight": 0.58138787737928,
+          "errorsPP": {
+            "agriculture": -0.5589041962625885,
+            "mining": 0.4284047269956556,
+            "manufacturing": -0.14096475880446685,
+            "construction": -0.15023935013552536,
+            "services": 0.1248013467380793,
+            "duties": 5.963562852444907
+          }
+        },
+        {
+          "quarter": "2023Q2",
+          "headlineErrorPP": -0.24368879690583878,
+          "servicesWeight": 0.5842921826166014,
+          "errorsPP": {
+            "agriculture": -0.5076815367444858,
+            "mining": 0.6441579961791989,
+            "manufacturing": 0.11348701631941649,
+            "construction": -0.16078381547766918,
+            "services": 0.3690804883472891,
+            "duties": -0.21402902640605265
+          }
+        },
+        {
+          "quarter": "2023Q3",
+          "headlineErrorPP": -0.33697516969615204,
+          "servicesWeight": 0.5820525730184438,
+          "errorsPP": {
+            "agriculture": -0.331110123488746,
+            "mining": 0.6570614980070333,
+            "manufacturing": 0.08747348095637193,
+            "construction": 0.37438623295254075,
+            "services": 0.4743311220209635,
+            "duties": 1.0208224693234262
+          }
+        },
+        {
+          "quarter": "2023Q4",
+          "headlineErrorPP": -0.18096914957030918,
+          "servicesWeight": 0.5860604282680574,
+          "errorsPP": {
+            "agriculture": 0.11868291669246654,
+            "mining": -0.215336224850219,
+            "manufacturing": -0.0008288587850346051,
+            "construction": -1.308377681082258,
+            "services": 0.34843734344810334,
+            "duties": 2.5063560155315954
+          }
+        },
+        {
+          "quarter": "2024Q1",
+          "headlineErrorPP": -0.35274364981627837,
+          "servicesWeight": 0.5903914563551895,
+          "errorsPP": {
+            "agriculture": 0.7665691753590557,
+            "mining": 0.26972162505227854,
+            "manufacturing": 0.024580712382333766,
+            "construction": 0.6411323814976069,
+            "services": 0.49938661376010895,
+            "duties": -3.1835164786019123
+          }
+        },
+        {
+          "quarter": "2024Q2",
+          "headlineErrorPP": -0.2537581974853875,
+          "servicesWeight": 0.5941059614882,
+          "errorsPP": {
+            "agriculture": 4.31974923707414,
+            "mining": 0.3140850300271808,
+            "manufacturing": -0.15597692863169588,
+            "construction": 0.7116644481138273,
+            "services": 0.060152339614118894,
+            "duties": -4.7364378037807935
+          }
+        },
+        {
+          "quarter": "2024Q3",
+          "headlineErrorPP": -0.27531810674217283,
+          "servicesWeight": 0.5925339297617557,
+          "errorsPP": {
+            "agriculture": 0.6316501726273405,
+            "mining": 0.5394915934763423,
+            "manufacturing": -0.1937808323764001,
+            "construction": 1.0434994995899642,
+            "services": 0.10062528060372014,
+            "duties": 12.940609787537694
+          }
+        },
+        {
+          "quarter": "2024Q4",
+          "headlineErrorPP": 0.16166615881936242,
+          "servicesWeight": 0.5933251312308105,
+          "errorsPP": {
+            "agriculture": -0.7040099594335827,
+            "mining": 0.007769809350073554,
+            "manufacturing": -0.26311725434960687,
+            "construction": 1.5040808172789495,
+            "services": -0.12236291981064795,
+            "duties": -2.9794953484962026
+          }
+        },
+        {
+          "quarter": "2025Q1",
+          "headlineErrorPP": 0.03825012379754522,
+          "servicesWeight": 0.5937091524187583,
+          "errorsPP": {
+            "agriculture": 1.1483276487773366,
+            "mining": -0.05375676114063033,
+            "manufacturing": 0.0688986838727132,
+            "construction": 0.5869720619023799,
+            "services": -0.153059551954058,
+            "duties": -4.549215332269108
+          }
+        },
+        {
+          "quarter": "2025Q2",
+          "headlineErrorPP": -0.2531599407757712,
+          "servicesWeight": 0.5942738937243491,
+          "errorsPP": {
+            "agriculture": 0.553625529664506,
+            "mining": -0.5495067844941186,
+            "manufacturing": -0.10520017587506356,
+            "construction": 1.8418268312142494,
+            "services": -0.03376598124414654,
+            "duties": 19.402763187901567
+          }
+        },
+        {
+          "quarter": "2025Q3",
+          "headlineErrorPP": -0.36619883040243106,
+          "servicesWeight": 0.5912066888733186,
+          "errorsPP": {
+            "agriculture": -0.8982828901764393,
+            "mining": -0.8369916113506168,
+            "manufacturing": 0.13692274638972754,
+            "construction": 3.7246649185353835,
+            "services": 0.15448900505756757,
+            "duties": 15.527056601817197
+          }
+        },
+        {
+          "quarter": "2025Q4",
+          "headlineErrorPP": -0.6011714914188948,
+          "servicesWeight": 0.595530563857283,
+          "errorsPP": {
+            "agriculture": 1.9225363459995086,
+            "mining": 0.09922488592590227,
+            "manufacturing": 0.09730651324882308,
+            "construction": 2.872034418282969,
+            "services": 0.37666522363504695,
+            "duties": 9.218871016209388
+          }
+        },
+        {
+          "quarter": "2026Q1",
+          "headlineErrorPP": -0.37355446622471256,
+          "servicesWeight": 0.5973201500976718,
+          "errorsPP": {
+            "agriculture": -1.2010766977178309,
+            "mining": 0.30767760564760216,
+            "manufacturing": 0.24478961830680032,
+            "construction": 1.0431663422339934,
+            "services": 0.22304542537902802,
+            "duties": 16.98521162500557
+          }
+        },
+        {
+          "quarter": "2026Q2",
+          "headlineErrorPP": 0.001712504667650272,
+          "servicesWeight": 0.597321679644588,
+          "errorsPP": {
+            "agriculture": -3.6828274588702157,
+            "mining": -0.23819900694678625,
+            "manufacturing": 0.08027069420683819,
+            "construction": -0.5637392156547558,
+            "services": 0.37199019703828134,
+            "duties": 1.5270817885939036
+          }
+        }
+      ]
+    }
+  }
+}
