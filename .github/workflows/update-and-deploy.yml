@@ -9,8 +9,6 @@ on:
         description: Download fresh official data (uncheck only to deploy the bundled snapshot)
         type: boolean
         default: true
-  schedule:
-    - cron: '30 5 * * 1-5'
 
 permissions:
   contents: read
