@@ -17,6 +17,24 @@ class SourceIntegrity(unittest.TestCase):
   with self.assertRaisesRegex(ValueError,'reconcile'):sources.validate(self.data)
  def test_schema_change_rejected(self):
   with self.assertRaisesRegex(ValueError,'schema'):sources.records('date,wrong\n2026-01-01,3',['date','index'])
+ def test_current_release_discovery_and_data_link(self):
+  from datetime import date
+  listing='<a href="/portal-main/release-content/volume-index-of-services-q32026">Latest</a>'
+  self.assertEqual(sources.release_links(listing,'volume-index-of-services'),['https://www.dosm.gov.my/portal-main/release-content/volume-index-of-services-q32026'])
+  page='<div>Latest Release : 13 November 2026</div><div id="data"><a download="Table" href="/table.xlsx">Data</a></div><div id="publication"><a download="PDF" href="/report.pdf">Report</a></div>'
+  self.assertEqual(sources.published_date(page),date(2026,11,13))
+  self.assertEqual(sources.data_download(page),'https://www.dosm.gov.my/table.xlsx')
+  with self.assertRaises(ValueError):sources.data_download('<div id="data">No table</div>')
+ def test_construction_workbook_requires_quarter_units_and_national_total(self):
+  import io,openpyxl
+  book=openpyxl.Workbook();sh=book.active
+  sh.append(['Value of work done, Malaysia, Q3 2026']);sh.append(["(RM '000)"])
+  sh.append([None,None,'Jumlah / Total',None,49522203.1113,100])
+  body=io.BytesIO();book.save(body)
+  self.assertAlmostEqual(sources.construction_table(body.getvalue(),'2026Q3'),49522203.1113)
+  with self.assertRaisesRegex(ValueError,'quarter'):sources.construction_table(body.getvalue(),'2026Q2')
+  sh.append([None,None,'Jumlah / Total',None,5,100]);body=io.BytesIO();book.save(body)
+  with self.assertRaisesRegex(ValueError,'ambiguous'):sources.construction_table(body.getvalue(),'2026Q3')
  def test_month_names_and_slug_abbreviations(self):
   from datetime import date
   entries=[('/portal-main/release-content/index-of-industrial-production-malaysia-janu-2023',date(2023,3,13),'Index of Industrial Production Malaysia')]
