@@ -35,6 +35,33 @@ def fetch(url,folder,name):
    time.sleep(1+attempt)
 def parse_archive(text):
  return [(html.unescape(u),datetime.strptime(dt,'%d.%m.%Y').date(),strip(title)) for u,dt,title in re.findall(r'<a[^>]+href="([^"]+)"[^>]*>(\d\d\.\d\d\.\d{4}) - ([^<]+)</a>',text,re.I)]
+
+def release_links(text,marker):
+ # Current subtheme cards carry the newest release; old archive pages may omit it.
+ return sorted(set(urllib.parse.urljoin(BASE,html.unescape(u)) for u in re.findall(r'href=["\x27]([^"\x27]+)["\x27]',text,re.I) if '/release-content/' in u and marker in u.lower()))
+
+def published_date(page):
+ match=re.search(r'Latest Release\s*:\s*(\d{1,2}\s+[A-Za-z]+\s+\d{4})',strip(page),re.I)
+ if not match:raise ValueError('Official release publication date missing')
+ return datetime.strptime(match[1],'%d %B %Y').date()
+
+def data_download(page):
+ section=re.search(r'<div\b[^>]*id=["\x27]data["\x27][^>]*>(.*?)(?=<div\b[^>]*id=|$)',page,re.I|re.S)
+ matches=re.findall(r'<a\b[^>]*\bdownload=["\x27][^"\x27]*["\x27][^>]*href=["\x27]([^"\x27]+)',section[1] if section else '',re.I)
+ if len(matches)!=1:raise ValueError('Official statistical-table download link changed')
+ return urllib.parse.urljoin(BASE,html.unescape(matches[0]))
+
+def construction_table(body,quarter):
+ import openpyxl
+ book=openpyxl.load_workbook(io.BytesIO(body),data_only=True,read_only=True)
+ try:
+  rows=list(book[book.sheetnames[0]].iter_rows(values_only=True))
+  text=' '.join(str(v) for row in rows[:7] for v in row if v is not None)
+  if not re.search(r'Q'+quarter[-1]+r'\s+'+quarter[:4],text) or "RM '000" not in text:raise ValueError('Construction table quarter or RM thousand units changed')
+  totals=[row[i+2] for row in rows for i,v in enumerate(row[:-2]) if isinstance(v,str) and re.fullmatch(r'Jumlah\s*/\s*Total',v.strip(),re.I) and isinstance(row[i+2],(float,int))]
+  if len(totals)!=1 or totals[0]<=0:raise ValueError('Construction national total missing or ambiguous')
+  return number(totals[0])
+ finally:book.close()
 def parse_cpo(text,year):
  heading=strip(text)
  if f'SUMMARY OF THE MALAYSIAN PALM OIL INDUSTRY {year}' not in heading:raise ValueError(f'Unexpected MPOB page for {year}')
@@ -69,6 +96,8 @@ def source_inventory(d):
   rows=d['gdp'] if key=='gdp' else d['quarterly'] if key in ['servicesVolume','constructionWork'] else d['monthly']
   valid=[r for r in rows if key=='gdp' or isinstance(r.get(key),(int,float))]
   if key=='cpo' and valid:url='https://bepi.mpob.gov.my/stat/web_report1.php?val='+max(r['date'] for r in valid)[:4]+'84'
+  if key=='servicesVolume':url=d.get('provenance',{}).get('servicesDownload',url)
+  if key=='constructionWork':url=d.get('provenance',{}).get('constructionDownload',url)
   result.append({'id':key,'name':name,'url':url,'units':unit,'frequency':freq,'provider':'MPOB' if key=='cpo' else 'DOSM','observations':len(valid),'latest':max(r.get('date',r.get('quarter')) for r in valid) if valid else None,'downloadedAt':d['updatedAt']})
  return result
 def unpublished_cpo_year_allowed(previous,today):
@@ -138,10 +167,21 @@ def refresh(output):
    for u,published,title in archives[key]:
     if marker in title.lower() and published.month in [2,5,8,11] and published<=now.date():dates[key][release_quarter(published)]=published.isoformat()
   candidates=[(date(2026,8,12),BASE+'/portal-main/release-content/volume-index-of-services-Q22026')]+[(p,urllib.parse.urljoin(BASE,u)) for u,p,t in archives['services'] if 'volume index of services' in t.lower() and p<=now.date()]
-  latest,vispage=max(candidates);page=fetch(vispage,folder,'services_release.html').decode('utf-8-sig')
-  matches=re.findall(r'<a\s+download="[^"]*"\s+href="([^"]+)"',page,re.I)
-  if len(matches)!=1:raise ValueError('DOSM services XLSX link changed')
-  visurl=html.unescape(matches[0]);body=fetch(visurl,folder,'services_volume.xlsx')
+  current={}
+  for key,marker in [('services','volume-index-of-services'),('construction','construction-statistics')]:
+   listing=fetch(BASE+'/portal-main/release-subthemes/'+key,folder,key+'_current.html').decode('utf-8-sig')
+   links=release_links(listing,marker)
+   if not links:raise ValueError(f'Current {key} release link missing')
+   pages=[]
+   for i,url in enumerate(links):
+    content=fetch(url,folder,f'{key}_current_release_{i}.html').decode('utf-8-sig');published=published_date(content)
+    if published<=now.date():pages.append((published,url,content))
+   if not pages:raise ValueError(f'No published current {key} release')
+   current[key]=max(pages)
+   published,url,content=current[key];dates[key][release_quarter(published)]=published.isoformat()
+  candidates.append(current['services'][:2])
+  latest,vispage=max(candidates);page=current['services'][2] if vispage==current['services'][1] else fetch(vispage,folder,'services_release.html').decode('utf-8-sig')
+  visurl=data_download(page);body=fetch(visurl,folder,'services_volume.xlsx')
   import openpyxl
   book=openpyxl.load_workbook(io.BytesIO(body),data_only=True,read_only=True)
   sh=book['Volume Segment'];year=None;vis={}
@@ -159,6 +199,10 @@ def refresh(output):
   actual=json.loads(match[1])['props']['pageProps']['timeseries']['data']['actual']
   if len(actual['x'])!=len(actual['value']):raise ValueError('Construction history incomplete')
   works={qlabel(datetime.fromtimestamp(x/1000,timezone.utc).date()):number(v) for x,v in zip(actual['x'],actual['value']) if datetime.fromtimestamp(x/1000,timezone.utc).year>=2015}
+  published,construction_page,content=current['construction'];cq=release_quarter(published)
+  construction_url=data_download(content)
+  works[cq]=construction_table(fetch(construction_url,folder,'construction_table.xlsx'),cq)
+  if cq not in works or release_quarter(latest) not in vis:raise ValueError('Latest published quarterly observations were not loaded')
   quarterly=[{'quarter':q,'servicesVolume':vis.get(q),'servicesPublished':dates['services'].get(q),'constructionWork':works.get(q),'constructionPublished':dates['construction'].get(q)} for q in sorted(set(vis)|set(works))]
   releases={'ipi':monthly_calendar(archives['ipi'],'industrial production'),'retail':monthly_calendar(archives['retail'],'performance of wholesale'),'gdp':{}}
   # Archive URLs omit their anchor release; include that verified release explicitly.
@@ -168,7 +212,7 @@ def refresh(output):
    if 'gross domestic product' in lower and 'advance' not in lower and ('quarter' in lower or re.search(r'q[1-4]',lower)) and published.month in [2,5,8,11] and published<=now.date():releases['gdp'][release_quarter(published)]=published.isoformat()
   if previous:
    for key in releases:releases[key]={**previous['releases'].get(key,{}),**releases[key]}
-  d={'schemaVersion':1,'updatedAt':now.isoformat(timespec='seconds'),'snapshotType':'official-source-refresh','provenance':{'description':'Latest revised official downloads. Historical forecasts do not recreate original-release data vintages.','servicesDownload':visurl,'refreshStatus':'complete','notes':warnings},'gdp':sorted(g.values(),key=lambda r:r['quarter']),'monthly':sorted(monthly.values(),key=lambda r:r['date']),'quarterly':quarterly,'releases':releases}
+  d={'schemaVersion':1,'updatedAt':now.isoformat(timespec='seconds'),'snapshotType':'official-source-refresh','provenance':{'description':'Latest revised official downloads. Historical forecasts do not recreate original-release data vintages.','servicesDownload':visurl,'constructionDownload':construction_url,'servicesRelease':vispage,'constructionRelease':construction_page,'refreshStatus':'complete','notes':warnings},'gdp':sorted(g.values(),key=lambda r:r['quarter']),'monthly':sorted(monthly.values(),key=lambda r:r['date']),'quarterly':quarterly,'releases':releases}
   d['sources']=source_inventory(d);validate(d,previous)
   d['snapshotId']=hashlib.sha256(json.dumps(d,sort_keys=True).encode()).hexdigest()[:16]
   (folder/'manifest.json').write_text(json.dumps({'sources':{k:u for k,(u,n) in jobs.items()},'updatedAt':d['updatedAt'],'snapshotId':d['snapshotId'],'status':'complete'},indent=2))
